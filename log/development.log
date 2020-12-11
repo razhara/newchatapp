@@ -1,2 +1,573 @@
   [1m[35m (304.3ms)[0m  [1m[35mCREATE DATABASE "newchatapp_development" ENCODING = 'unicode'[0m
   [1m[35m (317.8ms)[0m  [1m[35mCREATE DATABASE "newchatapp_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2020-12-11 20:37:27 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 362)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 1320.4ms | Allocations: 20202)
+Completed 500 Internal Server Error in 1392ms (ActiveRecord: 0.0ms | Allocations: 23968)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in D:/Coding/Rails/newchatapp/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2020-12-11 20:38:58 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 1247.9ms | Allocations: 6386)
+Completed 500 Internal Server Error in 1249ms (ActiveRecord: 0.0ms | Allocations: 6693)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in D:/Coding/Rails/newchatapp/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2020-12-11 21:14:25 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 235)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 415a948d492e21802f43
+Version: webpack 4.44.2
+Time: 2572ms
+Built at: 12/11/2020 9:14:31 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5871.2ms | Allocations: 8699)
+Completed 200 OK in 5890ms (Views: 5878.2ms | ActiveRecord: 0.0ms | Allocations: 11272)
+
+
+Started GET "/" for ::1 at 2020-12-11 21:48:45 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 235)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 8409beb4164403a536ad
+Version: webpack 4.44.2
+Time: 4820ms
+Built at: 12/11/2020 9:48:52 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-132bfe2f0b2933e36d55.js    865 KiB  application  [emitted] [immutable]  application
+js/application-132bfe2f0b2933e36d55.js.map    922 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-132bfe2f0b2933e36d55.js js/application-132bfe2f0b2933e36d55.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 464 bytes {application} [optional] [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 512 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 7104.9ms | Allocations: 8789)
+Completed 200 OK in 7124ms (Views: 7112.9ms | ActiveRecord: 0.0ms | Allocations: 11418)
+
+
+Started GET "/cable" for ::1 at 2020-12-11 21:48:52 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 21:48:52 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 21:58:59 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-11 22:09:11 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 433538cf4fe20ab77de1
+Version: webpack 4.44.2
+Time: 2002ms
+Built at: 12/11/2020 10:09:15 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4e557ae2bc5db4647cfb.js    866 KiB  application  [emitted] [immutable]  application
+js/application-4e557ae2bc5db4647cfb.js.map    923 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4e557ae2bc5db4647cfb.js js/application-4e557ae2bc5db4647cfb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 672 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 839 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4417.5ms | Allocations: 6147)
+Completed 200 OK in 4420ms (Views: 4418.8ms | Allocations: 6526)
+
+
+Started GET "/cable" for ::1 at 2020-12-11 22:09:15 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:09:15 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/?message=hello" for ::1 at 2020-12-11 22:09:23 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"message"=>"hello"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 3961)
+Completed 200 OK in 51ms (Views: 50.3ms | Allocations: 4338)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:09:24 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-11 22:09:24 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:09:24 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/?message=hello" for ::1 at 2020-12-11 22:09:51 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"message"=>"hello"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: a6293354ed7a5e1c987b
+Version: webpack 4.44.2
+Time: 2226ms
+Built at: 12/11/2020 10:09:56 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-29a0877f270a8f216eb0.js    866 KiB  application  [emitted] [immutable]  application
+js/application-29a0877f270a8f216eb0.js.map    923 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-29a0877f270a8f216eb0.js js/application-29a0877f270a8f216eb0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 672 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 842 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5237.2ms | Allocations: 6371)
+Completed 200 OK in 5239ms (Views: 5238.3ms | Allocations: 6744)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:09:56 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-11 22:09:56 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:09:57 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/?message=hello" for ::1 at 2020-12-11 22:10:28 +0700
+Processing by HomeController#index as HTML
+  Parameters: {"message"=>"hello"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 515ad3fcb76a41368808
+Version: webpack 4.44.2
+Time: 2151ms
+Built at: 12/11/2020 10:10:33 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-029b5a227546626d6827.js    866 KiB  application  [emitted] [immutable]  application
+js/application-029b5a227546626d6827.js.map    923 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-029b5a227546626d6827.js js/application-029b5a227546626d6827.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 672 bytes {application} [optional] [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 778 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5152.7ms | Allocations: 6373)
+Completed 200 OK in 5155ms (Views: 5153.8ms | Allocations: 6751)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:10:33 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-11 22:10:33 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:10:33 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-11 22:11:33 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:11:33 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:11:37 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-11 22:11:40 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 233)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 433538cf4fe20ab77de1
+Version: webpack 4.44.2
+Time: 1645ms
+Built at: 12/11/2020 10:11:44 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4e557ae2bc5db4647cfb.js    866 KiB  application  [emitted] [immutable]  application
+js/application-4e557ae2bc5db4647cfb.js.map    923 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4e557ae2bc5db4647cfb.js js/application-4e557ae2bc5db4647cfb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 672 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 839 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3886.2ms | Allocations: 8873)
+Completed 200 OK in 3900ms (Views: 3891.2ms | ActiveRecord: 0.0ms | Allocations: 11508)
+
+
+Started GET "/cable" for ::1 at 2020-12-11 22:11:44 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:11:44 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-11 22:12:05 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: a6293354ed7a5e1c987b
+Version: webpack 4.44.2
+Time: 1895ms
+Built at: 12/11/2020 10:12:10 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-29a0877f270a8f216eb0.js    866 KiB  application  [emitted] [immutable]  application
+js/application-29a0877f270a8f216eb0.js.map    923 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-29a0877f270a8f216eb0.js js/application-29a0877f270a8f216eb0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 672 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 842 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4909.4ms | Allocations: 6579)
+Completed 200 OK in 4911ms (Views: 4910.4ms | ActiveRecord: 0.0ms | Allocations: 6958)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:12:10 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-11 22:12:10 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:12:10 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-11 22:12:39 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 8396a183de7318155453
+Version: webpack 4.44.2
+Time: 1674ms
+Built at: 12/11/2020 10:12:43 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e719a2e3b0c01b7e7cd2.js    866 KiB  application  [emitted] [immutable]  application
+js/application-e719a2e3b0c01b7e7cd2.js.map    923 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e719a2e3b0c01b7e7cd2.js js/application-e719a2e3b0c01b7e7cd2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 672 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 839 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4375.8ms | Allocations: 6371)
+Completed 200 OK in 4377ms (Views: 4376.6ms | ActiveRecord: 0.0ms | Allocations: 6744)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:12:43 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-11 22:12:44 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:12:44 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:12:57 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-11 22:12:59 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: e365c2b3e5f33e2bf2a5
+Version: webpack 4.44.2
+Time: 1715ms
+Built at: 12/11/2020 10:13:02 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ae665fd9d8b292242954.js    866 KiB  application  [emitted] [immutable]  application
+js/application-ae665fd9d8b292242954.js.map    923 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ae665fd9d8b292242954.js js/application-ae665fd9d8b292242954.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 672 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 839 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3920.1ms | Allocations: 6145)
+Completed 200 OK in 3922ms (Views: 3921.0ms | ActiveRecord: 0.0ms | Allocations: 6518)
+
+
+Started GET "/cable" for ::1 at 2020-12-11 22:13:03 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:13:03 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/cable" for 127.0.0.1 at 2020-12-11 22:13:20 +0700
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2020-12-11 22:13:20 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-11 22:13:25 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 6673)
+Completed 200 OK in 64ms (Views: 55.9ms | ActiveRecord: 0.0ms | Allocations: 9308)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2020-12-11 22:13:25 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-11 22:13:25 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:13:25 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-11 22:13:28 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 3951)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms | Allocations: 4330)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:13:28 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-11 22:13:28 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:13:28 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-11 22:13:44 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 9f016ebf8b231bec70c5
+Version: webpack 4.44.2
+Time: 2192ms
+Built at: 12/11/2020 10:13:49 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f74cb32800b6bc135aa6.js    866 KiB  application  [emitted] [immutable]  application
+js/application-f74cb32800b6bc135aa6.js.map    923 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f74cb32800b6bc135aa6.js js/application-f74cb32800b6bc135aa6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 672 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 842 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5223.7ms | Allocations: 6555)
+Completed 200 OK in 5225ms (Views: 5224.7ms | ActiveRecord: 0.0ms | Allocations: 6932)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:13:49 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-11 22:13:50 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:13:50 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-11 22:15:07 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:15:08 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 2f36f99345b3e08ab2c4
+Version: webpack 4.44.2
+Time: 1813ms
+Built at: 12/11/2020 10:15:11 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5f65296c5a9e6b31c28e.js    867 KiB  application  [emitted] [immutable]  application
+js/application-5f65296c5a9e6b31c28e.js.map    923 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5f65296c5a9e6b31c28e.js js/application-5f65296c5a9e6b31c28e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 694 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 839 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4107.5ms | Allocations: 6459)
+Completed 200 OK in 4109ms (Views: 4108.5ms | ActiveRecord: 0.0ms | Allocations: 6832)
+
+
+Started GET "/cable" for ::1 at 2020-12-11 22:15:11 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:15:11 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Unable to process ChatRoomChannel#speak({"message"=>"yo"})
+Unable to process ChatRoomChannel#speak({"message"=>"yo"})
+Started GET "/" for ::1 at 2020-12-11 22:15:32 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 4021)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms | Allocations: 4394)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:15:32 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-11 22:15:32 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:15:32 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Unable to process ChatRoomChannel#speak({"message"=>"hello"})
+Started GET "/" for ::1 at 2020-12-11 22:19:37 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 6988986340c4ecfd8dc3
+Version: webpack 4.44.2
+Time: 1759ms
+Built at: 12/11/2020 10:19:41 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5af7664ed3479499cbc6.js    866 KiB  application  [emitted] [immutable]  application
+js/application-5af7664ed3479499cbc6.js.map    923 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5af7664ed3479499cbc6.js js/application-5af7664ed3479499cbc6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 628 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 839 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3966.7ms | Allocations: 6164)
+Completed 200 OK in 3969ms (Views: 3968.1ms | Allocations: 6658)
+
+
+Started GET "/cable" for ::1 at 2020-12-11 22:19:41 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-11 22:19:41 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#speak({"message"=>"hoi"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"hoi", :sent_by=>nil}
+ChatRoomChannel transmitting {"message"=>"hoi", "sent_by"=>nil} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"dor"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"dor", :sent_by=>nil}
+ChatRoomChannel transmitting {"message"=>"dor", "sent_by"=>nil} (via streamed from chat_room_channel)
