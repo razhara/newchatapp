@@ -24,6 +24,8 @@ const chatRoomChannel = consumer.subscriptions.create("ChatRoomChannel", {
 
   speak(message) {
     let name = sessionStorage.getItem('chat_room_name')
+    console.log(name)
+    console.log(message)
     this.perform('speak', { message, name })
   },
 
