@@ -571,3 +571,239 @@ ChatRoomChannel transmitting {"message"=>"hoi", "sent_by"=>nil} (via streamed fr
 ChatRoomChannel#speak({"message"=>"dor"})
 [ActionCable] Broadcasting to chat_room_channel: {:message=>"dor", :sent_by=>nil}
 ChatRoomChannel transmitting {"message"=>"dor", "sent_by"=>nil} (via streamed from chat_room_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-11 22:51:14 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-12 18:14:22 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 23.1ms | Allocations: 240)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 21e268bfd50407742064
+Version: webpack 4.44.2
+Time: 2982ms
+Built at: 12/12/2020 6:14:30 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-fe160437e7bc65c74862.js    868 KiB  application  [emitted] [immutable]  application
+js/application-fe160437e7bc65c74862.js.map    924 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-fe160437e7bc65c74862.js js/application-fe160437e7bc65c74862.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 1.17 KiB {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.22 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 7268.3ms | Allocations: 19531)
+Completed 200 OK in 7369ms (Views: 7311.1ms | ActiveRecord: 0.0ms | Allocations: 22104)
+
+
+Started GET "/cable" for ::1 at 2020-12-12 18:14:31 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 18:14:31 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>nil, "type"=>"leave"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>nil, :type=>"leave"}
+ChatRoomChannel transmitting {"chat_room_name"=>nil, "type"=>"leave"} (via streamed from chat_room_channel)
+Started GET "/" for ::1 at 2020-12-12 18:18:06 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 12de169f92698cece895
+Version: webpack 4.44.2
+Time: 1165ms
+Built at: 12/12/2020 6:18:08 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-701c064d18085195b1ef.js    868 KiB  application  [emitted] [immutable]  application
+js/application-701c064d18085195b1ef.js.map    924 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-701c064d18085195b1ef.js js/application-701c064d18085195b1ef.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 1.17 KiB {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2759.7ms | Allocations: 6188)
+Completed 200 OK in 2762ms (Views: 2761.0ms | ActiveRecord: 0.0ms | Allocations: 6572)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-12 18:18:08 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-12 18:18:09 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 18:18:09 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"Rim", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Rim", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Rim", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"hello", "name"=>"Rim"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"hello", :sent_by=>"Rim"}
+ChatRoomChannel transmitting {"message"=>"hello", "sent_by"=>"Rim"} (via streamed from chat_room_channel)
+Started GET "/" for ::1 at 2020-12-12 18:21:02 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Coding/Rails/newchatapp/public/packs
+[Webpacker] Hash: 12de169f92698cece895
+Version: webpack 4.44.2
+Time: 1191ms
+Built at: 12/12/2020 6:21:05 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-701c064d18085195b1ef.js    868 KiB  application  [emitted] [immutable]  application
+js/application-701c064d18085195b1ef.js.map    924 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-701c064d18085195b1ef.js js/application-701c064d18085195b1ef.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 187 bytes {application} [built]
+[./app/javascript/channels/chat_room_channel.js] 1.17 KiB {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 112 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2789.7ms | Allocations: 6189)
+Completed 200 OK in 2793ms (Views: 2792.8ms | Allocations: 6567)
+
+
+Started GET "/cable" for ::1 at 2020-12-12 18:21:05 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 18:21:05 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"mba", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"mba", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"mba", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"mba", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"dor", "name"=>"mba"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"dor", :sent_by=>"mba"}
+ChatRoomChannel transmitting {"message"=>"dor", "sent_by"=>"mba"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"message"=>"dor", "sent_by"=>"mba"} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"uwadu", "name"=>"Rim"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"uwadu", :sent_by=>"Rim"}
+ChatRoomChannel transmitting {"message"=>"uwadu", "sent_by"=>"Rim"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"message"=>"uwadu", "sent_by"=>"Rim"} (via streamed from chat_room_channel)
+ChatRoomChannel#announce({"name"=>"mba", "type"=>"leave"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"mba", :type=>"leave"}
+Started GET "/" for ::1 at 2020-12-12 18:21:36 +0700
+ChatRoomChannel transmitting {"chat_room_name"=>"mba", "type"=>"leave"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"mba", "type"=>"leave"} (via streamed from chat_room_channel)
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 3954)
+Completed 200 OK in 42ms (Views: 41.9ms | Allocations: 4327)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-12 18:21:36 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-12 18:21:36 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 18:21:36 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"zet", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"zet", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"zet", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"zet", "type"=>"join"} (via streamed from chat_room_channel)
+Started GET "/" for ::1 at 2020-12-12 19:47:17 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 6721)
+Completed 200 OK in 72ms (Views: 63.9ms | ActiveRecord: 0.0ms | Allocations: 9350)
+
+
+Started GET "/cable" for ::1 at 2020-12-12 19:47:17 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 19:47:17 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-12 19:47:18 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 19:47:18 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"satu", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"satu", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"satu", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"satu", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel#announce({"name"=>"Rim", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Rim", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Rim", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"Rim", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"helo gengs", "name"=>"Rim"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"helo gengs", :sent_by=>"Rim"}
+ChatRoomChannel transmitting {"message"=>"helo gengs", "sent_by"=>"Rim"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"message"=>"helo gengs", "sent_by"=>"Rim"} (via streamed from chat_room_channel)
+ChatRoomChannel#announce({"name"=>"Rim", "type"=>"leave"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Rim", :type=>"leave"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Rim", "type"=>"leave"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"Rim", "type"=>"leave"} (via streamed from chat_room_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-12 19:47:37 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"satu", "type"=>"leave"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"satu", :type=>"leave"}
+Started GET "/" for ::1 at 2020-12-12 19:49:24 +0700
+ChatRoomChannel transmitting {"chat_room_name"=>"satu", "type"=>"leave"} (via streamed from chat_room_channel)
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 3954)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms | Allocations: 4328)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-12 19:49:24 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-12 19:49:24 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 19:49:24 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"Arka", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Arka", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Arka", "type"=>"join"} (via streamed from chat_room_channel)
+Started GET "/" for ::1 at 2020-12-12 19:49:37 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 3956)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms | Allocations: 4334)
+
+
+Started GET "/cable" for ::1 at 2020-12-12 19:49:37 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 19:49:37 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"Faro", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Faro", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Faro", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"Faro", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"he faro", "name"=>"Arka"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"he faro", :sent_by=>"Arka"}
+ChatRoomChannel transmitting {"message"=>"he faro", "sent_by"=>"Arka"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"message"=>"he faro", "sent_by"=>"Arka"} (via streamed from chat_room_channel)
+Ignoring message processed after the WebSocket was closed: "{\"command\":\"message\",\"identifier\":\"{\\\"channel\\\":\\\"ChatRoomChannel\\\"}\",\"data\":\"{\\\"name\\\":\\\"Faro\\\",\\\"type\\\":\\\"leave\\\",\\\"action\\\":\\\"announce\\\"}\"}")
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-12 19:57:49 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
