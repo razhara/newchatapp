@@ -2,6 +2,8 @@
   <h2>Chat room</h2>
   <div id="chat_body">
     <div id="messages">
+     
+    <% if @message_logs.present? %>
       <% @message_logs.each do |message_log| %>
         
         <% session['chat_room_name'] == message_log.username ? category="sent" : category="received"  %>
@@ -14,7 +16,7 @@
         </p>
       <% end %>
 
-      
+    <% end %>
       </div>
     <form id="send_message">
       <input type="text" id="message" name="message">

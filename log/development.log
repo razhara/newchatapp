@@ -1408,3 +1408,237 @@ ChatRoomChannel#announce({"name"=>"", "type"=>"leave"})
 ChatRoomChannel transmitting {"chat_room_name"=>"", "type"=>"leave"} (via streamed from chat_room_channel)
 Finished "/cable/" [WebSocket] for ::1 at 2020-12-12 21:59:51 +0700
 ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/" for ::1 at 2020-12-12 22:19:24 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessageLog Load (3.1ms)[0m  [1m[34mSELECT "message_logs".* FROM "message_logs"[0m
+  ↳ app/views/home/index.html.erb:5
+  Rendered home/index.html.erb within layouts/application (Duration: 43.7ms | Allocations: 4340)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 147.1ms | Allocations: 8382)
+Completed 200 OK in 149ms (Views: 147.9ms | ActiveRecord: 14.7ms | Allocations: 8768)
+
+
+Started GET "/cable" for ::1 at 2020-12-12 22:19:24 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 22:19:24 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"Rim", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Rim", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Rim", "type"=>"join"} (via streamed from chat_room_channel)
+Started GET "/" for ::1 at 2020-12-12 22:19:35 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessageLog Load (0.6ms)[0m  [1m[34mSELECT "message_logs".* FROM "message_logs"[0m
+  ↳ app/views/home/index.html.erb:5
+  Rendered home/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 992)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 4910)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.6ms | Allocations: 5296)
+
+
+Started GET "/cable" for ::1 at 2020-12-12 22:19:35 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 22:19:35 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"suisei", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"suisei", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"suisei", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"suisei", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"haloooo", "name"=>"suisei"})
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/channels/chat_room_channel.rb:12:in `speak'
+  [1m[36mMessageLog Create (0.5ms)[0m  [1m[32mINSERT INTO "message_logs" ("username", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "suisei"], ["body", "haloooo"], ["created_at", "2020-12-12 15:19:49.612086"], ["updated_at", "2020-12-12 15:19:49.612086"]]
+  ↳ app/channels/chat_room_channel.rb:12:in `speak'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/channels/chat_room_channel.rb:12:in `speak'
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"haloooo", :sent_by=>"suisei"}
+ChatRoomChannel transmitting {"message"=>"haloooo", "sent_by"=>"suisei"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"message"=>"haloooo", "sent_by"=>"suisei"} (via streamed from chat_room_channel)
+ChatRoomChannel#announce({"name"=>"suisei", "type"=>"leave"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"suisei", :type=>"leave"}
+Started GET "/" for ::1 at 2020-12-12 22:23:02 +0700
+ChatRoomChannel transmitting {"chat_room_name"=>"suisei", "type"=>"leave"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"suisei", "type"=>"leave"} (via streamed from chat_room_channel)
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessageLog Load (1.9ms)[0m  [1m[34mSELECT "message_logs".* FROM "message_logs"[0m
+  ↳ app/views/home/index.html.erb:5
+  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 4965)
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 1.9ms | Allocations: 5351)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-12 22:23:03 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-12 22:23:03 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 22:23:03 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"Rim", "type"=>"leave"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Rim", :type=>"leave"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Rim", "type"=>"leave"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"Rim", "type"=>"leave"} (via streamed from chat_room_channel)
+Started GET "/" for ::1 at 2020-12-12 22:23:06 +0700
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessageLog Load (0.6ms)[0m  [1m[34mSELECT "message_logs".* FROM "message_logs"[0m
+  ↳ app/views/home/index.html.erb:5
+  Rendered home/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 4968)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.6ms | Allocations: 5354)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-12 22:23:06 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Started GET "/cable" for ::1 at 2020-12-12 22:23:06 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-12 22:23:06 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"satu", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"satu", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"satu", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"satu", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel#announce({"name"=>"dua", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"dua", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"dua", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"dua", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"halooooo", "name"=>"satu"})
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/channels/chat_room_channel.rb:12:in `speak'
+  [1m[36mMessageLog Create (0.4ms)[0m  [1m[32mINSERT INTO "message_logs" ("username", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "satu"], ["body", "halooooo"], ["created_at", "2020-12-12 15:23:26.766230"], ["updated_at", "2020-12-12 15:23:26.766230"]]
+  ↳ app/channels/chat_room_channel.rb:12:in `speak'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/channels/chat_room_channel.rb:12:in `speak'
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"halooooo", :sent_by=>"satu"}
+ChatRoomChannel transmitting {"message"=>"halooooo", "sent_by"=>"satu"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"message"=>"halooooo", "sent_by"=>"satu"} (via streamed from chat_room_channel)
+Ignoring message processed after the WebSocket was closed: "{\"command\":\"message\",\"identifier\":\"{\\\"channel\\\":\\\"ChatRoomChannel\\\"}\",\"data\":\"{\\\"name\\\":\\\"satu\\\",\\\"type\\\":\\\"leave\\\",\\\"action\\\":\\\"announce\\\"}\"}")
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-12 22:24:34 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-12 22:24:56 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+Ignoring message processed after the WebSocket was closed: "{\"command\":\"message\",\"identifier\":\"{\\\"channel\\\":\\\"ChatRoomChannel\\\"}\",\"data\":\"{\\\"name\\\":\\\"dua\\\",\\\"type\\\":\\\"leave\\\",\\\"action\\\":\\\"announce\\\"}\"}")
+Started GET "/" for ::1 at 2020-12-13 11:12:25 +0700
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessageLog Load (2.3ms)[0m  [1m[34mSELECT "message_logs".* FROM "message_logs"[0m
+  ↳ app/views/home/index.html.erb:5
+  Rendered home/index.html.erb within layouts/application (Duration: 42.9ms | Allocations: 4744)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 253.7ms | Allocations: 11237)
+Completed 200 OK in 367ms (Views: 269.2ms | ActiveRecord: 18.0ms | Allocations: 14090)
+
+
+Started GET "/cable" for ::1 at 2020-12-13 11:12:26 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-13 11:12:27 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>nil, "type"=>"leave"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>nil, :type=>"leave"}
+ChatRoomChannel transmitting {"chat_room_name"=>nil, "type"=>"leave"} (via streamed from chat_room_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2020-12-13 11:12:45 +0700
+ChatRoomChannel stopped streaming from chat_room_channel
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3598346962051155720)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3598346962051155720)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-12-13 11:17:03 +0700
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessageLog Load (2.4ms)[0m  [1m[34mSELECT "message_logs".* FROM "message_logs"[0m
+  ↳ app/views/home/index.html.erb:6
+  Rendered home/index.html.erb within layouts/application (Duration: 33.7ms | Allocations: 4778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.5ms | Allocations: 11255)
+Completed 200 OK in 90ms (Views: 73.2ms | ActiveRecord: 9.9ms | Allocations: 14165)
+
+
+Started GET "/cable" for ::1 at 2020-12-13 11:17:03 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-13 11:17:03 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"Rim", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Rim", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Rim", "type"=>"join"} (via streamed from chat_room_channel)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (48.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "newchatapp_development"[0m
+  [1m[35m (45.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "newchatapp_test"[0m
+  [1m[35m (452.4ms)[0m  [1m[35mCREATE DATABASE "newchatapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (406.4ms)[0m  [1m[35mCREATE DATABASE "newchatapp_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "message_logs" CASCADE[0m
+  [1m[35m (18.5ms)[0m  [1m[35mCREATE TABLE "message_logs" ("id" bigserial primary key, "username" character varying, "body" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201212134519)[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-13 04:18:05.734213"], ["updated_at", "2020-12-13 04:18:05.734213"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "3c493ecfde61519d2320c43db9abf78619bde45b"], ["created_at", "2020-12-13 04:18:05.742397"], ["updated_at", "2020-12-13 04:18:05.742397"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "message_logs" CASCADE[0m
+  [1m[35m (16.7ms)[0m  [1m[35mCREATE TABLE "message_logs" ("id" bigserial primary key, "username" character varying, "body" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201212134519)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-13 04:18:05.838067"], ["updated_at", "2020-12-13 04:18:05.838067"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-12-13 04:18:05.842409"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "3c493ecfde61519d2320c43db9abf78619bde45b"], ["created_at", "2020-12-13 04:18:05.846415"], ["updated_at", "2020-12-13 04:18:05.846415"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-12-13 11:18:22 +0700
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessageLog Load (9.1ms)[0m  [1m[34mSELECT "message_logs".* FROM "message_logs"[0m
+  ↳ app/views/home/index.html.erb:6
+  Rendered home/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.2ms | Allocations: 7644)
+Completed 200 OK in 72ms (Views: 56.0ms | ActiveRecord: 9.1ms | Allocations: 10554)
+
+
+Started GET "/cable" for ::1 at 2020-12-13 11:18:22 +0700
+Started GET "/cable/" [WebSocket] for ::1 at 2020-12-13 11:18:22 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
