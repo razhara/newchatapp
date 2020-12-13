@@ -5,13 +5,15 @@
 
 #main {
   height: 100vh;
-  background-color: bisque;
+  background-color: rgb(20, 42, 49);
   overflow: auto;
 
   h2 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: rgb(199, 223, 240);
+    font-family: monospace;
   }
 
   >div#chat_body {
@@ -43,14 +45,27 @@
         width: max-content;
 
         &.received {
-          background-color: chocolate;
+          background-color: rgb(80, 78, 82);
           border-bottom-right-radius: 10px;
+          font-size: larger;
+
+          em{
+            font-weight: bold;
+            font-size: small;
+          }
         }
 
         &.sent {
           border-bottom-left-radius: 10px;
-          background-color: darkred;
+          background-color: rgb(149, 162, 223);
           align-self: flex-end;
+          font-size: larger;
+
+          em{
+            font-weight: bold;
+            font-size: small;
+            text-align: right;
+          }
         }
 
         &.announce {
@@ -60,7 +75,7 @@
 
           em {
             font-weight: 700;
-            color: mediumorchid;
+            color: rgb(211, 209, 85);
           }
         }
       }
@@ -82,7 +97,7 @@
         width: 8.8%;
         border-radius: 20px;
         border: 0;
-        background-color: tomato;
+        background-color: rgb(9, 48, 221);
         color: white;
       }
     }

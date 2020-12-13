@@ -6,13 +6,15 @@
     
       <% @message_logs.each do |message_log| %>
         
-        <% session['chat_room_name'] == message_log.username ? category="sent" : category="received"  %>
+        <% message_log.jenis == "announce" ? category="announce" : category="received"  %>
         <p class='<%= category %>'>
+        <em>
         <%= message_log.username %>
+        </em>
+        <% if category=="received" %>
         <br>
+        <% end %>
         <%= message_log.body %>
-        <br>
-        <%= message_log.created_at %>
         </p>
       <% end %>
 
